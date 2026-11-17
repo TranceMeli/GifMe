@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 1480" width="1120" height="1480" role="img" aria-label="Activity: Save an item (ingest.create_item)">
+<defs>
+<marker id="tri" viewBox="0 0 14 14" refX="13" refY="7" markerWidth="14" markerHeight="14" orient="auto-start-reverse"><path d="M1 1L13 7L1 13z" fill="#fff6df" stroke="#2e2418" stroke-width="1.6"/></marker>
+<marker id="arr" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M1 1L11 6L1 11" fill="none" stroke="#2e2418" stroke-width="1.6"/></marker>
+<marker id="farr" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M1 1L11 6L1 11z" fill="#2e2418" stroke="#2e2418" stroke-width="1"/></marker>
+<marker id="dia" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse"><path d="M1 6L10 1L19 6L10 11z" fill="#2e2418" stroke="#2e2418" stroke-width="1.2"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#ffe9a9"/>
+<text x="24.0" y="30.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="18" font-weight="800" fill="#2e2418">Activity: Save an item (ingest.create_item)</text>
+<circle cx="330.0" cy="70.0" r="11" fill="#2e2418" stroke="#2e2418" stroke-width="2"/>
+<polyline points="330.0,81.0 330.0,120.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<rect x="180.0" y="119.0" width="300.0" height="62.0" rx="22" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="146.1" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e2418">Copy to a temporary file,</text>
+<text x="330.0" y="163.1" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e2418">compute SHA-256 and size</text>
+<polyline points="330.0,184.0 330.0,226.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<path d="M205.0 266.0L330.0 226.0L455.0 266.0L330.0 306.0z" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="262.9" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">Size over</text>
+<text x="330.0" y="277.9" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">the limit?</text>
+<polyline points="455.0,266.0 830.0,266.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="480.0" y="259.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="800" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">yes</text>
+<text x="642.5" y="284.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#5a4a36" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">413, file_too_large</text>
+<polyline points="330.0,306.0 330.0,346.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<text x="338.0" y="330.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="800" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">no</text>
+<path d="M205.0 386.0L330.0 346.0L455.0 386.0L330.0 426.0z" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="390.4" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">File empty?</text>
+<polyline points="455.0,386.0 830.0,386.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="480.0" y="379.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="800" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">yes</text>
+<text x="642.5" y="404.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#5a4a36" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">invalid_file</text>
+<polyline points="330.0,426.0 330.0,466.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<text x="338.0" y="450.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="800" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">no</text>
+<rect x="180.0" y="465.0" width="300.0" height="62.0" rx="22" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="492.1" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e2418">Detect file type</text>
+<text x="330.0" y="509.1" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e2418">from magic bytes</text>
+<polyline points="330.0,530.0 330.0,566.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<path d="M205.0 606.0L330.0 566.0L455.0 606.0L330.0 646.0z" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="602.9" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">Type</text>
+<text x="330.0" y="617.9" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">supported?</text>
+<text x="480.0" y="599.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="800" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">no</text>
+<polyline points="455.0,606.0 830.0,606.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="642.5" y="624.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#5a4a36" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">unsupported_type</text>
+<polyline points="330.0,646.0 330.0,686.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<text x="338.0" y="670.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="800" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">yes</text>
+<path d="M205.0 726.0L330.0 686.0L455.0 726.0L330.0 766.0z" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="722.9" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">SHA-256 already</text>
+<text x="330.0" y="737.9" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">exists?</text>
+<polyline points="455.0,726.0 680.0,726.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<text x="480.0" y="719.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="800" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">yes</text>
+<text x="567.5" y="744.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#5a4a36" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">409, DuplicateItemError</text>
+<polyline points="330.0,766.0 330.0,806.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<text x="338.0" y="790.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="800" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">no</text>
+<path d="M255.0 846.0L330.0 806.0L405.0 846.0L330.0 886.0z" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="851.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e2418">Video?</text>
+<polyline points="255.0,846.0 130.0,846.0 130.0,900.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<text x="240.0" y="838.0" text-anchor="end" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="800" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">yes</text>
+<polyline points="405.0,846.0 530.0,846.0 530.0,900.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<text x="420.0" y="838.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="800" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">no</text>
+<rect x="10.0" y="905.5" width="240.0" height="79.0" rx="22" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="130.0" y="932.5" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e2418">Dimensions and thumbnail</text>
+<text x="130.0" y="949.5" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e2418">via ffmpeg</text>
+<text x="130.0" y="966.5" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e2418">(placeholder without ffmpeg)</text>
+<rect x="405.0" y="914.0" width="250.0" height="62.0" rx="22" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="530.0" y="941.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e2418">Check image, read size,</text>
+<text x="530.0" y="958.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e2418">thumbnail via Pillow</text>
+<polyline points="130.0,985.0 130.0,1030.0 330.0,1030.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="530.0,977.0 530.0,1030.0 330.0,1030.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="330.0,1030.0 330.0,1060.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<rect x="170.0" y="1059.0" width="320.0" height="62.0" rx="22" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="1086.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e2418">Set type:</text>
+<text x="330.0" y="1103.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e2418">user choice or suggestion</text>
+<polyline points="330.0,1126.0 330.0,1160.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<rect x="170.0" y="1165.0" width="320.0" height="62.0" rx="22" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="1192.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e2418">Transaction: store file, thumbnail,</text>
+<text x="330.0" y="1209.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e2418">item and tags</text>
+<polyline points="330.0,1234.0 330.0,1264.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<path d="M190.0 1304.0L330.0 1264.0L470.0 1304.0L330.0 1344.0z" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="1300.9" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">Same file stored</text>
+<text x="330.0" y="1315.9" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">concurrently?</text>
+<polyline points="470.0,1304.0 830.0,1304.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="480.0" y="1297.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="800" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">yes</text>
+<text x="650.0" y="1322.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#5a4a36" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">Clean up files, 409</text>
+<polyline points="330.0,1344.0 330.0,1370.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<text x="338.0" y="1362.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="800" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">no</text>
+<rect x="180.0" y="1367.0" width="300.0" height="62.0" rx="22" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="1394.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e2418">Delete temporary file,</text>
+<text x="330.0" y="1411.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e2418">return item</text>
+<rect x="680.0" y="712.0" width="300.0" height="96.0" rx="22" fill="#ff933e" stroke="#2e2418" stroke-width="2"/>
+<text x="830.0" y="755.5" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#2e2418">Report ApiError,</text>
+<text x="830.0" y="773.5" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#2e2418">delete temporary file</text>
+<polyline points="830.0,266.0 830.0,712.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<polyline points="830.0,1304.0 830.0,808.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<polyline points="980.0,760.0 1058.0,760.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<circle cx="1072.0" cy="760.0" r="12" fill="#fff6df" stroke="#2e2418" stroke-width="2"/>
+<circle cx="1072.0" cy="760.0" r="6" fill="#2e2418" stroke="#2e2418" stroke-width="2"/>
+<text x="24.0" y="1466.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="600" fill="#5a4a36">Error branches lead into a shared ending. The temporary file is always deleted.</text>
+</svg>

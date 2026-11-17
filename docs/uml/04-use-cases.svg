@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 1180" width="1160" height="1180" role="img" aria-label="GifMeCollector: Use Cases">
+<defs>
+<marker id="tri" viewBox="0 0 14 14" refX="13" refY="7" markerWidth="14" markerHeight="14" orient="auto-start-reverse"><path d="M1 1L13 7L1 13z" fill="#fff6df" stroke="#2e2418" stroke-width="1.6"/></marker>
+<marker id="arr" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M1 1L11 6L1 11" fill="none" stroke="#2e2418" stroke-width="1.6"/></marker>
+<marker id="farr" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M1 1L11 6L1 11z" fill="#2e2418" stroke="#2e2418" stroke-width="1"/></marker>
+<marker id="dia" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse"><path d="M1 6L10 1L19 6L10 11z" fill="#2e2418" stroke="#2e2418" stroke-width="1.2"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#ffe9a9"/>
+<text x="24.0" y="30.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="18" font-weight="800" fill="#2e2418">GifMeCollector: Use Cases</text>
+<rect x="190.0" y="60.0" width="700.0" height="1070.0" rx="24" fill="#fff6df" stroke="#2e2418" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="540.0" y="92.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="16" font-weight="800" fill="#2e2418">GifMeCollector</text>
+<circle cx="80" cy="560" r="11" fill="#fff6df" stroke="#2e2418" stroke-width="2"/>
+<path d="M80 571V606M60 584H100M80 606L63 630M80 606L97 630" fill="none" stroke="#2e2418" stroke-width="2" stroke-linecap="round"/>
+<text x="80.0" y="652.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="14" font-weight="800" fill="#2e2418">User</text>
+<polyline points="102.0,596.0 218.0,140.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="102.0,596.0 218.0,225.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="102.0,596.0 218.0,310.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="102.0,596.0 218.0,420.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="102.0,596.0 218.0,600.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="102.0,596.0 218.0,685.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="102.0,596.0 218.0,770.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="102.0,596.0 218.0,855.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="102.0,596.0 218.0,960.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="102.0,596.0 218.0,1070.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<ellipse cx="330.0" cy="140.0" rx="118" ry="30" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="144.7" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2e2418">Browse collection</text>
+<ellipse cx="330.0" cy="225.0" rx="118" ry="30" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="229.7" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2e2418">Search and filter</text>
+<ellipse cx="330.0" cy="310.0" rx="118" ry="30" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="314.7" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2e2418">Sort</text>
+<ellipse cx="330.0" cy="420.0" rx="118" ry="30" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="424.7" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2e2418">Add item</text>
+<ellipse cx="330.0" cy="600.0" rx="118" ry="30" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="604.7" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2e2418">View details</text>
+<ellipse cx="330.0" cy="685.0" rx="118" ry="30" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="681.7" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2e2418">Change title, tags</text>
+<text x="330.0" y="697.7" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2e2418">and type</text>
+<ellipse cx="330.0" cy="770.0" rx="118" ry="30" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="766.7" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2e2418">Copy to</text>
+<text x="330.0" y="782.7" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2e2418">clipboard</text>
+<ellipse cx="330.0" cy="855.0" rx="118" ry="30" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="859.7" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2e2418">Download</text>
+<ellipse cx="330.0" cy="960.0" rx="118" ry="30" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="964.7" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2e2418">Edit GIF or image</text>
+<ellipse cx="330.0" cy="1070.0" rx="118" ry="30" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="330.0" y="1074.7" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2e2418">Delete item</text>
+<ellipse cx="720.0" cy="330.0" rx="118" ry="30" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="720.0" y="334.7" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2e2418">Load from link</text>
+<ellipse cx="720.0" cy="420.0" rx="118" ry="30" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="720.0" y="424.7" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2e2418">Check for duplicate</text>
+<ellipse cx="720.0" cy="510.0" rx="118" ry="30" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="720.0" y="514.7" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2e2418">Create thumbnail</text>
+<ellipse cx="720.0" cy="930.0" rx="118" ry="30" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="720.0" y="934.7" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2e2418">Compute preview</text>
+<ellipse cx="720.0" cy="1020.0" rx="118" ry="30" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="720.0" y="1024.7" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="13.5" font-weight="700" fill="#2e2418">Replace original</text>
+<polyline points="440.0,420.0 610.0,420.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<rect x="486.5" y="397.0" width="77.0" height="21" rx="10" fill="#ffe9a9" stroke="#2e2418" stroke-width="1"/>
+<text x="525.0" y="412.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">«include»</text>
+<polyline points="440.0,420.0 610.0,510.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<rect x="486.5" y="454.0" width="77.0" height="21" rx="10" fill="#ffe9a9" stroke="#2e2418" stroke-width="1"/>
+<text x="525.0" y="469.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">«include»</text>
+<polyline points="610.0,330.0 440.0,420.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<rect x="490.0" y="364.0" width="70.0" height="21" rx="10" fill="#ffe9a9" stroke="#2e2418" stroke-width="1"/>
+<text x="525.0" y="379.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">«extend»</text>
+<polyline points="440.0,960.0 610.0,930.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<rect x="486.5" y="934.0" width="77.0" height="21" rx="10" fill="#ffe9a9" stroke="#2e2418" stroke-width="1"/>
+<text x="525.0" y="949.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">«include»</text>
+<polyline points="610.0,1020.0 440.0,960.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<rect x="490.0" y="979.0" width="70.0" height="21" rx="10" fill="#ffe9a9" stroke="#2e2418" stroke-width="1"/>
+<text x="525.0" y="994.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">«extend»</text>
+<circle cx="1030" cy="300" r="11" fill="#fff6df" stroke="#2e2418" stroke-width="2"/>
+<path d="M1030 311V346M1010 324H1050M1030 346L1013 370M1030 346L1047 370" fill="none" stroke="#2e2418" stroke-width="2" stroke-linecap="round"/>
+<text x="1030.0" y="392.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="14" font-weight="800" fill="#2e2418">Source web server</text>
+<polyline points="1008.0,336.0 834.0,335.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<circle cx="1030" cy="470" r="11" fill="#fff6df" stroke="#2e2418" stroke-width="2"/>
+<path d="M1030 481V516M1010 494H1050M1030 516L1013 540M1030 516L1047 540" fill="none" stroke="#2e2418" stroke-width="2" stroke-linecap="round"/>
+<text x="1030.0" y="562.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="14" font-weight="800" fill="#2e2418">ffmpeg</text>
+<polyline points="1008.0,506.0 832.0,515.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="24.0" y="1166.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="600" fill="#5a4a36">Solid: the user triggers the use case. Dashed: include (always) and extend (optional).</text>
+</svg>

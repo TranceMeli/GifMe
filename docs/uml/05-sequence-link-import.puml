@@ -1,0 +1,41 @@
+@startuml
+skinparam shadowing false
+skinparam backgroundColor #FFE9A9
+skinparam defaultFontName Nunito
+title Add an item from a link
+actor User
+participant AddView
+participant ItemsStore
+participant ItemViewSet
+participant importer
+participant "Source web server" as Source
+participant ingest
+database "Storage\n(SQLite, media/)" as Storage
+User -> AddView : Paste link, Load
+AddView -> AddView : Check link, add to list
+User -> AddView : Save
+AddView -> ItemsStore : create({url})
+ItemsStore -> ItemViewSet : POST /api/items/
+ItemViewSet -> importer : download(url)
+importer -> importer : validate_url
+importer -> Source : GET url, with timeout
+Source --> importer : file
+importer -> importer : Check type and size
+importer --> ItemViewSet : temporary file
+ItemViewSet -> ingest : create_item(stream)
+ingest -> ingest : SHA-256, detect file type
+ingest -> Storage : sha256 already exists?
+alt file is already in the collection
+  ingest --> ItemViewSet : DuplicateItemError
+  ItemViewSet --> ItemsStore : 409, existing_id
+  ItemsStore --> AddView : duplicate error
+  AddView --> User : notice with link
+else new file
+  ingest -> ingest : Create thumbnail
+  ingest -> Storage : Store files and item
+  ingest --> ItemViewSet : Item
+  ItemViewSet --> ItemsStore : 201, Item
+  ItemsStore --> AddView : Item
+  AddView --> User : Entry removed from list
+end
+@enduml

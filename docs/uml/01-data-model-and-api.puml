@@ -1,0 +1,98 @@
+@startuml
+title GifMeCollector Backend: Data Model and API
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam backgroundColor #FFE9A9
+skinparam class {
+  BackgroundColor #FFF6DF
+  BorderColor #2E2418
+  HeaderBackgroundColor #FFCB56
+}
+skinparam ArrowColor #2E2418
+
+class "ItemPagination" as ItemPagination <<DRF>> {
+  + page_size: int = 48
+  + max_page_size: int = 200
+}
+class "ApiError" as ApiError <<Exception>> {
+  + status_code: int = 400
+  + code: str
+  --
+  + __init__(detail, code, status_code, extra)
+}
+class "DuplicateItemError" as DuplicateItemError <<Exception>> {
+  + status_code: int = 409
+  --
+  + __init__(existing_id, existing)
+}
+class "ItemViewSet" as ItemViewSet <<ViewSet>> {
+  + http_method_names: list
+  --
+  + list()
+  + retrieve()
+  + create()
+  + partial_update()
+  + destroy()
+  + counts()
+  + edit_info()
+  + edit_preview()
+  + edit(mode: copy | replace)
+}
+class "TagViewSet" as TagViewSet <<ViewSet>> {
+  + queryset: Tag with count
+  --
+  + list()
+}
+class "ItemSerializer" as ItemSerializer <<Serializer>> {
+  + file_url: str
+  + thumbnail_url: str
+  + tags: TagListField
+  --
+  + validate_type(value)
+  + update(instance, data)
+}
+class "TagListField" as TagListField <<Serializer>> {
+  + to_representation(value)
+  + to_internal_value(data)
+}
+class "TagSerializer" as TagSerializer <<Serializer>> {
+  + name: str
+  + count: int
+}
+class "Item" as Item <<Model>> {
+  + file: FileField
+  + thumbnail: FileField
+  + type: Type
+  + title: str
+  + sha256: str {unique}
+  + width: int
+  + height: int
+  + size_bytes: int
+  + is_favorite: bool
+  + source_url: str
+  + created_at: datetime
+  --
+  + __str__(): str
+}
+class "Tag" as Tag <<Model>> {
+  + name: str {unique}
+  --
+  + save()
+}
+class "Item.Type" as ItemType <<enumeration>> {
+  GIF
+  MEME
+  VIDEO
+}
+
+DuplicateItemError --|> ApiError
+ItemViewSet ..> ItemSerializer : uses
+ItemViewSet ..> ItemPagination : paginates
+ItemViewSet ..> ApiError : raises
+TagViewSet ..> TagSerializer : uses
+ItemSerializer "1" *-- "1" TagListField
+ItemSerializer ..> Item : serializes
+TagSerializer ..> Tag : serializes
+Item "*" -- "*" Tag : tags
+Item ..> ItemType : type
+@enduml

@@ -1,0 +1,43 @@
+@startuml
+skinparam shadowing false
+skinparam backgroundColor #FFE9A9
+skinparam defaultFontName Nunito
+left to right direction
+actor User
+actor "Source web server" as Source
+actor ffmpeg
+rectangle GifMeCollector {
+  usecase "Browse collection" as UC1
+  usecase "Search and filter" as UC2
+  usecase "Sort" as UC3
+  usecase "Add item" as UC4
+  usecase "Load from link" as UC5
+  usecase "Check for duplicate" as UC6
+  usecase "Create thumbnail" as UC7
+  usecase "View details" as UC8
+  usecase "Change title, tags and type" as UC9
+  usecase "Copy to clipboard" as UC10
+  usecase "Download" as UC11
+  usecase "Edit GIF or image" as UC12
+  usecase "Compute preview" as UC13
+  usecase "Replace original" as UC14
+  usecase "Delete item" as UC15
+}
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+User --> UC8
+User --> UC9
+User --> UC10
+User --> UC11
+User --> UC12
+User --> UC15
+UC4 ..> UC6 : <<include>>
+UC4 ..> UC7 : <<include>>
+UC5 ..> UC4 : <<extend>>
+UC12 ..> UC13 : <<include>>
+UC14 ..> UC12 : <<extend>>
+UC5 -- Source
+UC7 -- ffmpeg
+@enduml

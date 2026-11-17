@@ -1,0 +1,17 @@
+@startuml
+skinparam shadowing false
+skinparam backgroundColor #FFE9A9
+skinparam defaultFontName Nunito
+title Entry in the waiting list
+state "Saving" as SavingState
+[*] --> Ready : file chosen, pasted, link loaded
+Ready --> SavingState : Save
+SavingState --> Duplicate : 409 duplicate
+SavingState --> Error : other error
+SavingState --> [*] : 201 stored, entry removed
+Error --> SavingState : Save again
+Ready --> [*] : Remove entry
+Duplicate --> [*] : Remove entry
+Error --> [*] : Remove entry
+note right of Duplicate : skipped when saving
+@enduml

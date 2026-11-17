@@ -1,0 +1,35 @@
+@startuml
+skinparam shadowing false
+skinparam backgroundColor #FFE9A9
+skinparam defaultFontName Nunito
+title Deployment
+node "Own computer" {
+  node "Browser" {
+    component "Vue views and router" as Views
+    component "Pinia stores" as Stores
+    component "api/ (fetch)" as ApiModule
+  }
+  node "Vite dev server :5190" as Vite {
+    component "Proxy /api and /media" as Proxy
+  }
+  node "Django :8190" as Django {
+    component "DRF API" as Api
+    component "Services" as Services
+    component "Django ORM" as Orm
+  }
+  database "SQLite db.sqlite3" as Db
+  folder "media/" as Media
+  node "ffmpeg and ffprobe" as Ffmpeg
+}
+cloud "Source web server" as Source
+Views --> Stores
+Stores --> ApiModule
+ApiModule --> Proxy : HTTP
+Proxy --> Api : HTTP
+Api --> Services
+Api --> Orm
+Orm --> Db : SQL
+Services --> Media : files
+Services ..> Ffmpeg : subprocess
+Services ..> Source : HTTP GET
+@enduml

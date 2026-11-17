@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 560" width="1120" height="560" role="img" aria-label="States: Preview in the editor">
+<defs>
+<marker id="tri" viewBox="0 0 14 14" refX="13" refY="7" markerWidth="14" markerHeight="14" orient="auto-start-reverse"><path d="M1 1L13 7L1 13z" fill="#fff6df" stroke="#2e2418" stroke-width="1.6"/></marker>
+<marker id="arr" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M1 1L11 6L1 11" fill="none" stroke="#2e2418" stroke-width="1.6"/></marker>
+<marker id="farr" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M1 1L11 6L1 11z" fill="#2e2418" stroke="#2e2418" stroke-width="1"/></marker>
+<marker id="dia" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse"><path d="M1 6L10 1L19 6L10 11z" fill="#2e2418" stroke="#2e2418" stroke-width="1.2"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#ffe9a9"/>
+<text x="24.0" y="30.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="18" font-weight="800" fill="#2e2418">States: Preview in the editor</text>
+<circle cx="60.0" cy="250.0" r="11" fill="#2e2418" stroke="#2e2418" stroke-width="2"/>
+<rect x="150.0" y="217.0" width="220.0" height="66.0" rx="22" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="260.0" y="246.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="15" font-weight="800" fill="#2e2418">Original view</text>
+<text x="260.0" y="266.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#2e2418">no change</text>
+<rect x="500.0" y="217.0" width="240.0" height="66.0" rx="22" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="620.0" y="246.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="15" font-weight="800" fill="#2e2418">Computing preview</text>
+<text x="620.0" y="266.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#2e2418">after a 600 ms pause</text>
+<rect x="860.0" y="97.0" width="240.0" height="66.0" rx="22" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="980.0" y="126.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="15" font-weight="800" fill="#2e2418">Preview up to date</text>
+<text x="980.0" y="146.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#2e2418">result and size visible</text>
+<rect x="870.0" y="337.0" width="220.0" height="66.0" rx="22" fill="#ff933e" stroke="#2e2418" stroke-width="2"/>
+<text x="980.0" y="366.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="15" font-weight="800" fill="#2e2418">Error</text>
+<text x="980.0" y="386.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#2e2418">message with icon</text>
+<polyline points="71.0,250.0 150.0,250.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<polyline points="370.0,232.0 500.0,232.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<text x="435.0" y="212.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">Slider moved</text>
+<polyline points="500.0,268.0 370.0,268.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<text x="435.0" y="292.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">all changes undone</text>
+<polyline points="715.0,216.0 858.0,150.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<text x="745.0" y="160.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">Image received</text>
+<polyline points="715.0,284.0 870.0,350.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<text x="745.0" y="340.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">Server error</text>
+<polyline points="860.0,112.0 620.0,112.0 620.0,217.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<text x="740.0" y="100.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">Slider moved</text>
+<polyline points="870.0,390.0 620.0,390.0 620.0,284.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<text x="740.0" y="414.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">Slider moved</text>
+<polyline points="980.0,97.0 980.0,60.0 260.0,60.0 260.0,217.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<text x="620.0" y="52.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">Reset</text>
+<circle cx="980.0" cy="500.0" r="14" fill="#fff6df" stroke="#2e2418" stroke-width="2"/>
+<circle cx="980.0" cy="500.0" r="8" fill="#2e2418" stroke="#2e2418" stroke-width="2"/>
+<polyline points="1100.0,130.0 1108.0,130.0 1108.0,500.0 996.0,500.0" fill="none" stroke="#2e2418" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#farr)"/>
+<text x="1100.0" y="230.0" text-anchor="end" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418" stroke="#ffe9a9" stroke-width="4" paint-order="stroke" stroke-linejoin="round">Save</text>
+<text x="1100.0" y="248.0" text-anchor="end" font-family="Nunito, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#5a4a36">(leaves the page)</text>
+<text x="24.0" y="546.0" text-anchor="start" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="600" fill="#5a4a36">Every slider change restarts the computation. Outdated responses are discarded.</text>
+</svg>

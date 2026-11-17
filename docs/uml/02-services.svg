@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2360 944" width="2360" height="944" role="img" aria-label="GifMeCollector Backend: Services">
+<defs>
+<marker id="tri" viewBox="0 0 14 14" refX="13" refY="7" markerWidth="14" markerHeight="14" orient="auto-start-reverse"><path d="M1 1L13 7L1 13z" fill="#fff6df" stroke="#2e2418" stroke-width="1.6"/></marker>
+<marker id="arr" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M1 1L11 6L1 11" fill="none" stroke="#2e2418" stroke-width="1.6"/></marker>
+<marker id="dia" viewBox="0 0 20 12" refX="19" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse"><path d="M1 6L10 1L19 6L10 11z" fill="#2e2418" stroke="#2e2418" stroke-width="1.2"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#ffe9a9"/>
+<text x="24" y="28" font-family="Nunito, Segoe UI, sans-serif" font-size="18" font-weight="800" fill="#2e2418">GifMeCollector Backend: Services</text>
+<line x1="867.0" y1="90.1" x2="233.0" y2="231.9" stroke="#2e2418" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<line x1="957.0" y1="100.0" x2="957.0" y2="190.0" stroke="#2e2418" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<line x1="1047.0" y1="92.0" x2="1586.0" y2="223.9" stroke="#2e2418" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<line x1="136.5" y1="317.0" x2="136.5" y2="426.0" stroke="#2e2418" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<line x1="1117.0" y1="302.1" x2="1656.0" y2="434.0" stroke="#2e2418" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<line x1="820.3" y1="336.0" x2="651.7" y2="426.0" stroke="#2e2418" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<line x1="957.0" y1="336.0" x2="957.0" y2="426.0" stroke="#2e2418" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<line x1="1079.0" y1="336.0" x2="1229.5" y2="426.0" stroke="#2e2418" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<line x1="1746.0" y1="336.0" x2="1746.0" y2="426.0" stroke="#2e2418" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<line x1="1858.4" y1="336.0" x2="2016.0" y2="438.3" stroke="#2e2418" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<line x1="515.0" y1="572.0" x2="515.0" y2="738.0" stroke="#2e2418" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<line x1="623.5" y1="572.0" x2="870.1" y2="738.0" stroke="#2e2418" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+<g font-family="Consolas, Courier New, monospace" font-size="13" fill="#2e2418">
+<rect x="46.5" y="426.0" width="180" height="60" rx="12" fill="#fff6df" stroke="#2e2418" stroke-width="2"/>
+<path d="M46.5 476.0V438.0a12 12 0 0 1 12 -12H214.5a12 12 0 0 1 12 12V476.0z" fill="#ff933e" stroke="#2e2418" stroke-width="2"/>
+<text x="136.5" y="447.0" text-anchor="middle" font-size="12" font-style="italic">&#171;Exception&#187;</text>
+<text x="136.5" y="463.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="15" font-weight="800">ApiError</text>
+</g>
+<g font-family="Consolas, Courier New, monospace" font-size="13" fill="#2e2418">
+<rect x="867.0" y="40.0" width="180" height="60" rx="12" fill="#fff6df" stroke="#2e2418" stroke-width="2"/>
+<path d="M867.0 90.0V52.0a12 12 0 0 1 12 -12H1035.0a12 12 0 0 1 12 12V90.0z" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="957.0" y="61.0" text-anchor="middle" font-size="12" font-style="italic">&#171;ViewSet&#187;</text>
+<text x="957.0" y="77.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="15" font-weight="800">ItemViewSet</text>
+</g>
+<g font-family="Consolas, Courier New, monospace" font-size="13" fill="#2e2418">
+<rect x="1656.0" y="426.0" width="180" height="60" rx="12" fill="#fff6df" stroke="#2e2418" stroke-width="2"/>
+<path d="M1656.0 476.0V438.0a12 12 0 0 1 12 -12H1824.0a12 12 0 0 1 12 12V476.0z" fill="#ff933e" stroke="#2e2418" stroke-width="2"/>
+<text x="1746.0" y="447.0" text-anchor="middle" font-size="12" font-style="italic">&#171;Model&#187;</text>
+<text x="1746.0" y="463.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="15" font-weight="800">Item</text>
+</g>
+<g font-family="Consolas, Courier New, monospace" font-size="13" fill="#2e2418">
+<rect x="40.0" y="190.0" width="193" height="127" rx="12" fill="#fff6df" stroke="#2e2418" stroke-width="2"/>
+<path d="M40.0 240.0V202.0a12 12 0 0 1 12 -12H221.0a12 12 0 0 1 12 12V240.0z" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="136.5" y="211.0" text-anchor="middle" font-size="12" font-style="italic">&#171;service&#187;</text>
+<text x="136.5" y="227.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="15" font-weight="800">importer</text>
+<line x1="40.0" y1="250.0" x2="233.0" y2="250.0" stroke="#2e2418" stroke-width="1.5"/>
+<text x="52.0" y="269.0">+ validate_url(url)</text>
+<text x="52.0" y="288.0">+ open_url(url)</text>
+<text x="52.0" y="307.0">+ download(url): file</text>
+</g>
+<g font-family="Consolas, Courier New, monospace" font-size="13" fill="#2e2418">
+<rect x="797.0" y="190.0" width="320" height="146" rx="12" fill="#fff6df" stroke="#2e2418" stroke-width="2"/>
+<path d="M797.0 240.0V202.0a12 12 0 0 1 12 -12H1105.0a12 12 0 0 1 12 12V240.0z" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="957.0" y="211.0" text-anchor="middle" font-size="12" font-style="italic">&#171;service&#187;</text>
+<text x="957.0" y="227.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="15" font-weight="800">ingest</text>
+<line x1="797.0" y1="250.0" x2="1117.0" y2="250.0" stroke="#2e2418" stroke-width="1.5"/>
+<text x="809.0" y="269.0">+ spool_to_disk(stream)</text>
+<text x="809.0" y="288.0">+ create_item(stream, ...): Item</text>
+<text x="809.0" y="307.0">+ replace_content(item, stream): Item</text>
+<text x="809.0" y="326.0">+ too_large(): ApiError</text>
+</g>
+<g font-family="Consolas, Courier New, monospace" font-size="13" fill="#2e2418">
+<rect x="1586.0" y="190.0" width="320" height="146" rx="12" fill="#fff6df" stroke="#2e2418" stroke-width="2"/>
+<path d="M1586.0 240.0V202.0a12 12 0 0 1 12 -12H1894.0a12 12 0 0 1 12 12V240.0z" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="1746.0" y="211.0" text-anchor="middle" font-size="12" font-style="italic">&#171;service&#187;</text>
+<text x="1746.0" y="227.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="15" font-weight="800">editing</text>
+<text x="1598.0" y="259.0">+ MAX_CROP_PERCENT = 45</text>
+<text x="1598.0" y="278.0">+ ROTATIONS = (0, 90, 180, 270)</text>
+<line x1="1586.0" y1="288.0" x2="1906.0" y2="288.0" stroke="#2e2418" stroke-width="1.5"/>
+<text x="1598.0" y="307.0">+ frame_info(item): dict</text>
+<text x="1598.0" y="326.0">+ render(item, params): (bytes, mime)</text>
+</g>
+<g font-family="Consolas, Courier New, monospace" font-size="13" fill="#2e2418">
+<rect x="343.0" y="426.0" width="344" height="146" rx="12" fill="#fff6df" stroke="#2e2418" stroke-width="2"/>
+<path d="M343.0 476.0V438.0a12 12 0 0 1 12 -12H675.0a12 12 0 0 1 12 12V476.0z" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="515.0" y="447.0" text-anchor="middle" font-size="12" font-style="italic">&#171;service&#187;</text>
+<text x="515.0" y="463.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="15" font-weight="800">detection</text>
+<line x1="343.0" y1="486.0" x2="687.0" y2="486.0" stroke="#2e2418" stroke-width="1.5"/>
+<text x="355.0" y="505.0">+ sniff_format(head): Format</text>
+<text x="355.0" y="524.0">+ inspect_image(path): ImageInfo</text>
+<text x="355.0" y="543.0">+ suggest_type(fmt, animated)</text>
+<text x="355.0" y="562.0">+ resolve_type(requested, fmt, animated)</text>
+</g>
+<g font-family="Consolas, Courier New, monospace" font-size="13" fill="#2e2418">
+<rect x="817.0" y="426.0" width="280" height="146" rx="12" fill="#fff6df" stroke="#2e2418" stroke-width="2"/>
+<path d="M817.0 476.0V438.0a12 12 0 0 1 12 -12H1085.0a12 12 0 0 1 12 12V476.0z" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="957.0" y="447.0" text-anchor="middle" font-size="12" font-style="italic">&#171;service&#187;</text>
+<text x="957.0" y="463.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="15" font-weight="800">thumbnails</text>
+<line x1="817.0" y1="486.0" x2="1097.0" y2="486.0" stroke="#2e2418" stroke-width="1.5"/>
+<text x="829.0" y="505.0">+ image_thumbnail(path): bytes</text>
+<text x="829.0" y="524.0">+ video_thumbnail(path): bytes</text>
+<text x="829.0" y="543.0">+ placeholder_thumbnail(): bytes</text>
+<text x="829.0" y="562.0">+ video_dimensions(path)</text>
+</g>
+<g font-family="Consolas, Courier New, monospace" font-size="13" fill="#2e2418">
+<rect x="1227.0" y="426.0" width="249" height="146" rx="12" fill="#fff6df" stroke="#2e2418" stroke-width="2"/>
+<path d="M1227.0 476.0V438.0a12 12 0 0 1 12 -12H1464.0a12 12 0 0 1 12 12V476.0z" fill="#73a5ca" stroke="#2e2418" stroke-width="2"/>
+<text x="1351.5" y="447.0" text-anchor="middle" font-size="12" font-style="italic">&#171;service&#187;</text>
+<text x="1351.5" y="463.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="15" font-weight="800">tags</text>
+<text x="1239.0" y="495.0">+ MAX_TAGS = 30</text>
+<text x="1239.0" y="514.0">+ MAX_TAG_LENGTH = 50</text>
+<line x1="1227.0" y1="524.0" x2="1476.0" y2="524.0" stroke="#2e2418" stroke-width="1.5"/>
+<text x="1239.0" y="543.0">+ normalize_tags(raw): list</text>
+<text x="1239.0" y="562.0">+ set_item_tags(item, names)</text>
+</g>
+<g font-family="Consolas, Courier New, monospace" font-size="13" fill="#2e2418">
+<rect x="2016.0" y="426.0" width="304" height="222" rx="12" fill="#fff6df" stroke="#2e2418" stroke-width="2"/>
+<path d="M2016.0 476.0V438.0a12 12 0 0 1 12 -12H2308.0a12 12 0 0 1 12 12V476.0z" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="2168.0" y="447.0" text-anchor="middle" font-size="12" font-style="italic">&#171;dataclass&#187;</text>
+<text x="2168.0" y="463.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="15" font-weight="800">EditParams</text>
+<text x="2028.0" y="495.0">+ start: int</text>
+<text x="2028.0" y="514.0">+ end: int</text>
+<text x="2028.0" y="533.0">+ reverse: bool</text>
+<text x="2028.0" y="552.0">+ speed: float</text>
+<text x="2028.0" y="571.0">+ crop_left/right/top/bottom: float</text>
+<text x="2028.0" y="590.0">+ rotate: int</text>
+<text x="2028.0" y="609.0">+ scale: int</text>
+<line x1="2016.0" y1="619.0" x2="2320.0" y2="619.0" stroke="#2e2418" stroke-width="1.5"/>
+<text x="2028.0" y="638.0">+ from_data(data): EditParams</text>
+</g>
+<g font-family="Consolas, Courier New, monospace" font-size="13" fill="#2e2418">
+<rect x="425.0" y="738.0" width="180" height="136" rx="12" fill="#fff6df" stroke="#2e2418" stroke-width="2"/>
+<path d="M425.0 788.0V750.0a12 12 0 0 1 12 -12H593.0a12 12 0 0 1 12 12V788.0z" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="515.0" y="759.0" text-anchor="middle" font-size="12" font-style="italic">&#171;dataclass&#187;</text>
+<text x="515.0" y="775.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="15" font-weight="800">Format</text>
+<text x="437.0" y="807.0">+ name: str</text>
+<text x="437.0" y="826.0">+ extension: str</text>
+<text x="437.0" y="845.0">+ mime: str</text>
+<text x="437.0" y="864.0">+ is_video: bool</text>
+</g>
+<g font-family="Consolas, Courier New, monospace" font-size="13" fill="#2e2418">
+<rect x="867.0" y="738.0" width="180" height="117" rx="12" fill="#fff6df" stroke="#2e2418" stroke-width="2"/>
+<path d="M867.0 788.0V750.0a12 12 0 0 1 12 -12H1035.0a12 12 0 0 1 12 12V788.0z" fill="#ffcb56" stroke="#2e2418" stroke-width="2"/>
+<text x="957.0" y="759.0" text-anchor="middle" font-size="12" font-style="italic">&#171;dataclass&#187;</text>
+<text x="957.0" y="775.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="15" font-weight="800">ImageInfo</text>
+<text x="879.0" y="807.0">+ width: int</text>
+<text x="879.0" y="826.0">+ height: int</text>
+<text x="879.0" y="845.0">+ animated: bool</text>
+</g>
+<rect x="512.5" y="150.0" width="75" height="21" rx="10" fill="#ffe9a9" stroke="#2e2418" stroke-width="1"/>
+<text x="550.0" y="165.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">load link</text>
+<rect x="933.5" y="134.0" width="47" height="21" rx="10" fill="#ffe9a9" stroke="#2e2418" stroke-width="1"/>
+<text x="957.0" y="149.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">store</text>
+<rect x="1296.5" y="146.9" width="40" height="21" rx="10" fill="#ffe9a9" stroke="#2e2418" stroke-width="1"/>
+<text x="1316.5" y="161.9" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">edit</text>
+<rect x="109.5" y="360.5" width="54" height="21" rx="10" fill="#ffe9a9" stroke="#2e2418" stroke-width="1"/>
+<text x="136.5" y="375.5" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">raises</text>
+<rect x="1356.0" y="357.1" width="61" height="21" rx="10" fill="#ffe9a9" stroke="#2e2418" stroke-width="1"/>
+<text x="1386.5" y="372.1" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">creates</text>
+<rect x="691.5" y="370.0" width="89" height="21" rx="10" fill="#ffe9a9" stroke="#2e2418" stroke-width="1"/>
+<text x="736.0" y="385.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">detect type</text>
+<rect x="919.5" y="370.0" width="75" height="21" rx="10" fill="#ffe9a9" stroke="#2e2418" stroke-width="1"/>
+<text x="957.0" y="385.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">thumbnail</text>
+<rect x="1134.2" y="370.0" width="40" height="21" rx="10" fill="#ffe9a9" stroke="#2e2418" stroke-width="1"/>
+<text x="1154.2" y="385.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">Tags</text>
+<rect x="1722.5" y="370.0" width="47" height="21" rx="10" fill="#ffe9a9" stroke="#2e2418" stroke-width="1"/>
+<text x="1746.0" y="385.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">reads</text>
+<rect x="1896.2" y="376.2" width="82" height="21" rx="10" fill="#ffe9a9" stroke="#2e2418" stroke-width="1"/>
+<text x="1937.2" y="391.2" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">parameters</text>
+<rect x="484.5" y="644.0" width="61" height="21" rx="10" fill="#ffe9a9" stroke="#2e2418" stroke-width="1"/>
+<text x="515.0" y="659.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">returns</text>
+<rect x="716.3" y="644.0" width="61" height="21" rx="10" fill="#ffe9a9" stroke="#2e2418" stroke-width="1"/>
+<text x="746.8" y="659.0" text-anchor="middle" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" font-weight="700" fill="#2e2418">returns</text>
+<text x="24" y="930" font-family="Nunito, Segoe UI, sans-serif" font-size="12.5" fill="#5a4a36">The services are Python modules with functions, drawn as classes with the stereotype service.</text>
+</svg>

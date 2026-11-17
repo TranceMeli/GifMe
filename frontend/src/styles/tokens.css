@@ -1,0 +1,33 @@
+:root {
+  /* Palette */
+  --color-orange: #ff933e;
+  --color-yellow: #ffcb56;
+  --color-cream: #ffe9a9;
+  --color-blue: #73a5ca;
+  --color-container: #fff6df;
+
+  /* Text. Always dark, also on orange (white would fail the contrast target). */
+  --color-text: #2e2418;
+  --color-text-muted: #5a4a36;
+  --color-on-dark: #fff6df;
+  --color-danger: #8f2d1f;
+
+  /* Shape */
+  --radius-container: 40px;
+  --radius-tile: 24px;
+  --radius-pill: 999px;
+  --border-width: 2px;
+  --border-container: var(--border-width) solid var(--color-orange);
+  --border-ink: var(--border-width) solid var(--color-text);
+
+  /* Sizing */
+  --control-height: 48px;
+  --tile-min: 160px;
+
+  /* Type */
+  --font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Focus ring (visible on every palette color) */
+  --focus-ring: 3px solid var(--color-text);
+  --focus-offset: 3px;
+}

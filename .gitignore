@@ -1,0 +1,32 @@
+# User data
+media/
+thumbs/
+db.sqlite3
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+coverage/
+
+# Environment
+.env
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# PlantUML tooling and rendered output
+tools/
+docs/uml/rendered/

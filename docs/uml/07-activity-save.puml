@@ -1,0 +1,39 @@
+@startuml
+skinparam shadowing false
+skinparam backgroundColor #FFE9A9
+skinparam defaultFontName Nunito
+title Save an item (ingest.create_item)
+start
+:Copy to a temporary file,\ncompute SHA-256 and size;
+if (Size over the limit?) then (yes)
+  :Report 413 file_too_large;
+  stop
+endif
+if (File empty?) then (yes)
+  :Report invalid_file;
+  stop
+endif
+:Detect file type from magic bytes;
+if (Type supported?) then (no)
+  :Report unsupported_type;
+  stop
+endif
+if (SHA-256 already exists?) then (yes)
+  :Report 409 DuplicateItemError;
+  stop
+endif
+if (Video?) then (yes)
+  :Dimensions and thumbnail via ffmpeg\n(placeholder without ffmpeg);
+else (no)
+  :Check image, read size,\nthumbnail via Pillow;
+endif
+:Set type: user choice or suggestion;
+:Transaction: store file, thumbnail,\nitem and tags;
+if (Same file stored concurrently?) then (yes)
+  :Clean up files, report 409;
+  stop
+endif
+:Delete temporary file,\nreturn item;
+stop
+note right : The temporary file is always deleted
+@enduml

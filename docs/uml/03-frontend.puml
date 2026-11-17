@@ -1,0 +1,125 @@
+@startuml
+title GifMeCollector Frontend: Views, Stores and API
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam backgroundColor #FFE9A9
+skinparam class {
+  BackgroundColor #FFF6DF
+  BorderColor #2E2418
+  HeaderBackgroundColor #FFCB56
+}
+skinparam ArrowColor #2E2418
+
+class "ItemTile" as ItemTile <<component>> {
+  + item: Item
+  + autoplay: bool
+  - hover: bool
+  --
+  + emit tag(name)
+}
+class "ItemsView" as ItemsView <<view>> {
+  - searchInput: Element
+  --
+  + onKeydown(event)
+  + activeFilters(): Filter[]
+}
+class "ItemDetailView" as ItemDetailView <<view>> {
+  - title: str
+  - source: str
+  - message: Status
+  --
+  + save(patch)
+  + addTag()
+  + toggleFavorite()
+  + confirmDelete()
+}
+class "ItemEditView" as ItemEditView <<view>> {
+  - edit: EditState
+  - previewUrl: str
+  - cropActive: bool
+  --
+  + ask(mode)
+  + save(mode)
+  + reset()
+}
+class "AddView" as AddView <<view>> {
+  - pending: Entry[]
+  - notice: str
+  --
+  + addFiles(files)
+  + addLink()
+  + saveAll()
+}
+class "PrefsStore" as PrefsStore <<Pinia store>> {
+  + autoplay: bool
+  + reducedMotion: bool
+  --
+  + toggleAutoplay()
+}
+class "FilterStore" as FilterStore <<Pinia store>> {
+  + type: str
+  + search: str
+  + query: str
+  + tags: str[]
+  + sort: str
+  --
+  + apiParams()
+  + countParams()
+  + urlQuery()
+  + isFiltered()
+  + toggleType(type)
+  + setSearch(text)
+  + toggleTag(name)
+  + setSort(sort)
+  + reset()
+  + hydrate(query)
+}
+class "ItemsStore" as ItemsStore <<Pinia store>> {
+  + items: Item[]
+  + count: int
+  + counts: Counts
+  + hasMore: bool
+  + current: Item
+  + loading: bool
+  + error: str
+  --
+  + fetch()
+  + fetchMore()
+  + get(id)
+  + create(payload)
+  + update(id, patch)
+  + remove(id)
+  + toggleFavorite(id)
+}
+class "ItemsApi" as ItemsApi <<module>> {
+  + listItems(params)
+  + getCounts(params)
+  + getItem(id)
+  + createItem(data)
+  + updateItem(id, patch)
+  + deleteItem(id)
+  + getEditInfo(id)
+  + previewEdit(id, edit)
+  + saveEdit(id, edit, mode)
+}
+class "ApiClient" as ApiClient <<module>> {
+  + request(path, options)
+}
+class "ApiClientError" as JsApiError <<error>> {
+  + status: int
+  + code: str
+  + data: object
+}
+
+ItemsView "1" *-- "0..*" ItemTile
+ItemsView ..> PrefsStore
+ItemsView ..> FilterStore
+ItemsView ..> ItemsStore
+ItemDetailView ..> ItemsStore
+ItemEditView ..> ItemsStore
+AddView ..> ItemsStore
+ItemsStore ..> FilterStore : reads filters
+ItemsStore ..> ItemsApi : calls
+ItemsApi ..> ApiClient
+ApiClient ..> JsApiError : raises
+@enduml

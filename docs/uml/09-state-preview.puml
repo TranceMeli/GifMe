@@ -1,0 +1,18 @@
+@startuml
+skinparam shadowing false
+skinparam backgroundColor #FFE9A9
+skinparam defaultFontName Nunito
+title Preview in the editor
+state "Computing preview" as Computing
+state "Preview up to date" as UpToDate
+state "Original view" as Original
+[*] --> Original
+Original --> Computing : slider moved
+Computing --> Original : all changes undone
+Computing --> UpToDate : image received
+Computing --> Error : server error
+UpToDate --> Computing : slider moved
+Error --> Computing : slider moved
+UpToDate --> Original : Reset
+UpToDate --> [*] : Save
+@enduml

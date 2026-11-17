@@ -1,0 +1,40 @@
+@startuml
+skinparam shadowing false
+skinparam backgroundColor #FFE9A9
+skinparam defaultFontName Nunito
+title Edit a GIF or image
+actor User
+participant ItemEditView
+participant ItemViewSet
+participant editing
+participant ingest
+database "Storage\n(SQLite, media/)" as Storage
+User -> ItemEditView : Open editor
+ItemEditView -> ItemViewSet : GET edit-info
+ItemViewSet -> editing : frame_info(item)
+editing --> ItemViewSet : frames, duration, size
+ItemViewSet --> ItemEditView : edit-info
+User -> ItemEditView : Move slider
+ItemEditView -> ItemEditView : wait 600 ms (debounce)
+ItemEditView -> ItemViewSet : POST edit/preview
+ItemViewSet -> editing : render(item, params)
+editing --> ItemViewSet : bytes and MIME type
+ItemViewSet --> ItemEditView : image (blob)
+ItemEditView -> ItemEditView : Show preview, size, dimensions
+User -> ItemEditView : Choose save
+ItemEditView -> ItemViewSet : POST edit, mode
+ItemViewSet -> editing : render(item, params)
+editing --> ItemViewSet : Bytes
+alt mode = copy
+  ItemViewSet -> ingest : create_item(bytes, ...)
+  ingest -> Storage : Store new item
+  ingest --> ItemViewSet : Item
+  ItemViewSet --> ItemEditView : 201, new item
+else mode = replace, after confirmation
+  ItemViewSet -> ingest : replace_content(item, bytes)
+  ingest -> Storage : Replace file, delete old
+  ingest --> ItemViewSet : Item
+  ItemViewSet --> ItemEditView : 200, Item
+end
+ItemEditView -> ItemEditView : Go to detail page
+@enduml

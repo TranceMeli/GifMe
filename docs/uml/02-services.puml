@@ -1,0 +1,91 @@
+@startuml
+title GifMeCollector Backend: Services
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam backgroundColor #FFE9A9
+skinparam class {
+  BackgroundColor #FFF6DF
+  BorderColor #2E2418
+  HeaderBackgroundColor #FFCB56
+}
+skinparam ArrowColor #2E2418
+
+class "ApiError" as ApiError <<Exception>> {
+}
+class "ItemViewSet" as ItemViewSet <<ViewSet>> {
+}
+class "Item" as Item <<Model>> {
+}
+class "importer" as importer <<service>> {
+  + validate_url(url)
+  + open_url(url)
+  + download(url): file
+}
+class "ingest" as ingest <<service>> {
+  + spool_to_disk(stream)
+  + create_item(stream, ...): Item
+  + replace_content(item, stream): Item
+  + too_large(): ApiError
+}
+class "editing" as editing <<service>> {
+  + MAX_CROP_PERCENT = 45
+  + ROTATIONS = (0, 90, 180, 270)
+  --
+  + frame_info(item): dict
+  + render(item, params): (bytes, mime)
+}
+class "detection" as detection <<service>> {
+  + sniff_format(head): Format
+  + inspect_image(path): ImageInfo
+  + suggest_type(fmt, animated)
+  + resolve_type(requested, fmt, animated)
+}
+class "thumbnails" as thumbnails <<service>> {
+  + image_thumbnail(path): bytes
+  + video_thumbnail(path): bytes
+  + placeholder_thumbnail(): bytes
+  + video_dimensions(path)
+}
+class "tags" as tags <<service>> {
+  + MAX_TAGS = 30
+  + MAX_TAG_LENGTH = 50
+  --
+  + normalize_tags(raw): list
+  + set_item_tags(item, names)
+}
+class "EditParams" as EditParams <<dataclass>> {
+  + start: int
+  + end: int
+  + reverse: bool
+  + speed: float
+  + crop_left/right/top/bottom: float
+  + rotate: int
+  + scale: int
+  --
+  + from_data(data): EditParams
+}
+class "Format" as Format <<dataclass>> {
+  + name: str
+  + extension: str
+  + mime: str
+  + is_video: bool
+}
+class "ImageInfo" as ImageInfo <<dataclass>> {
+  + width: int
+  + height: int
+  + animated: bool
+}
+
+ItemViewSet ..> importer : load link
+ItemViewSet ..> ingest : store
+ItemViewSet ..> editing : edit
+importer ..> ApiError : raises
+ingest ..> Item : creates
+ingest ..> detection : detect type
+ingest ..> thumbnails : thumbnail
+ingest ..> tags : Tags
+editing ..> Item : reads
+editing ..> EditParams : parameters
+detection ..> Format : returns
+detection ..> ImageInfo : returns
+@enduml
